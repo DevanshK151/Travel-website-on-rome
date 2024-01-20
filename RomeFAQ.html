@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <style>
+
+header{background-color:#F0F1C5; width:100%;height:100px;}
+  footer{background-color:#F9DEA5;width:100%;height:100px;}
+
+.cityimg{
+padding:200px;
+text-align:center;
+background-image:url("https://media.timeout.com/images/105453834/750/422/image.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+color:black;
+}
+
+.content{
+background-color:#F0F1C5;
+opacity:0.5;
+font-size:30px;
+border:10px soild yellow;
+padding:20px;
+font-family:Times new Roman;
+}
+
+.wrapper{
+text-align:center;
+padding:10px;
+}
+
+footer{
+background-color:orange;
+color:white;
+width:100%;
+height:80px;
+text-align:center;
+font-size:20px;
+}
+
+nav ul li{list-style-type:none;display:inline-block;}
+nav ul li a{text-decoration:none;margin:10px;color:brown;}
+
+.attractions h2{margin:10px;text-align:center;font-size:40px;}
+.attractions ul{list-style-type:none;text-align:center; }
+.attractions ul h2{background-color:#6DD1D0;font-size:25px;padding:10px;}
+.attractions img{width:1000px;height:800px;}
+
+      .questions{
+        background-color:#F0F1C5;
+        opacity:.8;
+        padding:20px;
+        border:5px solid #B6433B;
+        font-family:"Times New Roman", Times, serif;
+      }
+      
+      .rome{
+position:relative;
+margin:20px;
+border-bottom:5px solid #ccc;
+cursor:pointer;
+}
+
+.faq-list-item span{
+position: absolute;
+display:inline-block;
+top:1px;
+right:40px;
+font-size:20px;
+}
+
+.answer{
+  display:none;
+padding: 5px 0px;
+margin-bottom: 15px;
+}
+
+.faq-list-item{
+position:relative;
+margin:10px;
+border-bottom:1px solid #ccc;
+cursor:pointer;
+}
+
+
+    </style>
+  </head>
+  <body>
+  <header><center><h1 style="color:brown;">Rome</h1></center>
+<nav>
+ <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="hotel.html">Hotels</a></li>
+      <li><a href="resturants.html">Resturants</a></li>
+	<li><a href="contact.html">Contact us</a></li>
+	<li><a href="history.html">History</a></li>
+	<li><a href="RomeFAQ.html">FAQ</a></li>
+    </ul>
+</nav>
+</header>
+    <h1>Rome FAQ</h1>
+    <div class="questions">
+
+<ul> <li class='faq-list-item'><h2>What is the best way of transport in Rome</h2> <span>+</span>
+
+ <div class='answer'><p>The Metro is one of the easiest methods of transport in Rome. At least, the parts not full of underground Roman ruins! The metro runs daily from early until late, with the exact timetable varying according to works and special events in the city.<p></div> </li> 
+
+<li class='faq-list-item'><h2>What is the most common type of weather in Rome?</h2><span>+</span>
+
+ <div class='answer'> <p>Rome has a Mediterranean climate with cool winters and warm and hot summers. The temperatures can vary with lows of 2°C in January to the highs of 30°C in July and August.</p></div> </li> 
+
+<li class='faq-list-item'><h2>What is the currency used in Rome?</h2><span>+</span>
+
+ <div class='answer'><p> Italy's (Rome is located in Italy) currency is the Euro (€). We recommend that you take a mixture of cash along with currency on a pre-paid currency card. Credit cards are widely accepted in hotels, restaurants, shops and autostrada tollbooths. </p></div></li> 
+</ul>
+  
+</div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <footer>
+    <p>This website was made by Devansh Kumar</p>
+    <a href="https://en.wikipedia.org/wiki/Rome"> To know more about Rome</a>
+  </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$(function(){
+
+  $('.faq-list-item').click(function(){
+    var $answer = $(this).find('.answer');
+
+    if($answer.hasClass('open')) { 
+      $answer.removeClass('open');
+      // Use the slideUp() method to hide $answer
+      $answer.slideUp();
+      
+      // Find the <span> elements inside, then rewrite the content using the text() method
+      $(this).find('span').text('+');
+      
+    } else {
+      $answer.addClass('open'); 
+      // Use the slideDown() method to show $answer
+      $answer.slideDown();
+      $(this).find('span').text('-');
+      // Find the <span> elements inside, then rewrite the content using the text() method
+      
+      
+    }
+  });
+});
+    
+
+</script>
+  </body>
+</html>
